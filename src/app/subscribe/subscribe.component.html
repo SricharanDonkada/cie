@@ -1,0 +1,33 @@
+<div class="subscribe_form">
+<form  #userForm="ngForm" *ngIf="status == 0 || status == 1" novalidate (ngSubmit)="onSubmit()" >
+  <div class="form-group" style="width:500px;margin-top: 100px">
+    <label style="color:white">
+        Name
+      </label>
+      <input  #name="ngModel" [(ngModel)] = "subscribeModel.name" [class.is-invalid]='name.invalid && name.touched' required name="name" type="text" class="form-control"/>
+      <small *ngIf="!(name.untouched || name.valid)" class="text-danger" >Name is required</small>
+  </div>
+    <div class="form-group" style="width:500px;margin-top: 10px">
+        <label style="color:white">
+          Email
+        </label>
+        <input #email="ngModel" required pattern="^[^\s@]+@[^\s@]+\.[^\s@]{2,}$" [(ngModel)] = "subscribeModel.email" [class.is-invalid]="email.invalid && email.touched" name="email" type="email" class="form-control"/>
+        <div *ngIf="email.errors &&(email.invalid && email.touched)">
+          <small class="text-danger" *ngIf="email.errors.required">Email is required</small>
+          <small class="text-danger" *ngIf="email.errors.pattern">Enter a valid email</small>
+        </div>
+        <p style="color:white" *ngIf="status == 1">This email is already registered!</p>
+        <button [disabled]="userForm.form.invalid || topicHasError" class="submit_subscribe" type="submit" >Subscribe</button>
+    </div>
+    
+</form>
+<div *ngIf="status == 2" style="text-align:center;margin-top:2%;color:white">
+<h1>
+  Thankyou for subscribing !
+</h1>
+<p>
+  You will be receiving latest updates
+</p>
+
+</div>
+</div>

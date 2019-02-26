@@ -1,0 +1,17 @@
+
+body{
+    background-image: url('src/assets/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+.active_link{
+    border-bottom: 3px solid white;
+    padding-left: 10px;
+}
+
+.active_link:focus{
+    outline: 0;
+}

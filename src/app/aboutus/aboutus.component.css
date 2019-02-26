@@ -1,0 +1,33 @@
+.head
+{
+    position: absolute;
+    left: 5%;
+    top: 12%;
+    color: rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-bottom:4px solid rgb(255, 255, 255);
+    width:40%;
+}
+.para
+{
+    font-size:1.5em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:rgb(240, 240, 240);
+    position: absolute;
+    width: 90%;
+    left: 6%;
+    top: 25%;
+}
+.mentor{
+    position: absolute;
+    bottom: 20%;
+    right: 2%;
+    font-size:20px;
+    height:30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:rgb(235, 235, 235);
+}
+.sir_name{
+    font-size: 1.5em;
+}

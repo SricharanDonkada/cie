@@ -1,0 +1,98 @@
+.box
+{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    height: 768px;
+   background-color: white;
+
+
+}
+.box .inputbox
+{
+    position: relative;
+    padding-bottom:20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:15px;
+    padding-left:18px;
+    
+    
+}
+.box .inputbox input{
+    border:none;
+    border-bottom:1.5px solid rgb(250, 10, 238);
+    outline:none;
+    font-size:18px;
+    top: 0;
+    transition: 0.5s;
+    width:350px;
+   
+}
+.box .inputbox label{
+    position: absolute;
+    color: rgb(212, 212, 212);
+    top:0;
+    left:0;
+    text-align: center;
+   
+
+}
+.box{
+    margin-top:30px;
+    width:400px;
+    height:600px;
+    box-shadow: 2px 2px 15px rgb(167, 167, 167);
+  
+}
+.g
+{
+  padding-left:18px;
+  
+    border-radius:0.8px;
+}
+.z
+{
+  
+    padding-left:150px;
+    padding-top:20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:15px;
+   
+}
+button:hover
+{
+  animation-name:y;
+  animation-duration: 10s;
+  color: black;
+  border-color:white;
+ 
+}
+@keyframes y{
+  0%{
+    background-color: black;
+    color: white;
+  }
+  5%{
+    background-color: white;
+    color: black;
+    cursor:pointer;
+  }
+  7%
+  {
+      border:none;
+      outline:none;
+      border:2px solid black ;
+  }
+  100%{
+    background-color: white;
+    color: black;
+    cursor:pointer;
+    border:2px solid black ;
+  }
+}
+
+.signup-submit{
+    height:30px; border:none;border-radius:2px;outline:none;width:85px;font-size:15px;text-align:center;background-color:black;color:white;
+    width: 100px;
+}

@@ -1,0 +1,12 @@
+.contactus_container{
+    color: white;
+}
+
+.contactus_head{
+    border-bottom: 2px solid white;
+    position: absolute;
+    left: 10px;
+    width: 30%;
+    text-align: center;
+    
+}

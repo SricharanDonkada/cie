@@ -1,0 +1,27 @@
+.subscribe_form{
+    display: block;
+    margin: auto;
+    max-width: 500px;
+}
+
+.submit_subscribe{
+    outline: none;
+    margin-left: 40%;
+    height: 35px;
+    width: 100px;
+    color: white;
+    background: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-top: 20px;
+   
+    
+}
+
+
+
+
+
+.submit_subscribe:disabled{
+    cursor: not-allowed;
+}
